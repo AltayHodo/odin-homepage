@@ -49,7 +49,7 @@ header {
   gap: 10px;
 }
 
-.icons > img{
+.icons > img {
   width: 25px;
   height: 25px;
 }
@@ -63,9 +63,9 @@ header {
 
 .projects-container {
   width: 100vw;
-  padding: 30px;
+  padding: 10px 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   justify-items: center;
   gap: 30px;
 }
@@ -74,7 +74,7 @@ header {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
-  max-width: 300px;
+  /* max-width: 350px; */
 }
 
 .screenshot {
@@ -111,6 +111,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 80px;
 }
 
 .footer-title {
@@ -118,7 +119,7 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer-info > div{
+.footer-info > div {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -139,7 +140,17 @@ footer img {
   width: 25px;
 }
 
-.bottom-image{
+.bottom-image {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 1300px) {
+  .projects-container{
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid;
+  }
+  .project{
+    width: 100%;
+  }
 }
