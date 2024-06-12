@@ -49,6 +49,11 @@ header {
   gap: 10px;
 }
 
+.icons > img{
+  width: 25px;
+  height: 25px;
+}
+
 .main-title {
   display: flex;
   justify-content: center;
